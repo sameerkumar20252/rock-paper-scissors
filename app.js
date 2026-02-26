@@ -14,7 +14,6 @@ const genCompChoice = () => {
     return options[randIdx];
 }
 
-// console.log(genCompChoice());
 const playGame = (userChoice) => {
     if(gamepause) return;
     let comp = genCompChoice();
@@ -63,7 +62,6 @@ const playGame = (userChoice) => {
 choices.forEach((choice) => {
     choice.addEventListener("click", () =>{
         const userChoice = choice.getAttribute("id");
-        console.log(userChoice);
         playGame(userChoice);
     });
 });
