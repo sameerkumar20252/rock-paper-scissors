@@ -22,7 +22,6 @@ const playGame = (userChoice) => {
 
     gamepause = true;
 
-    console.log(comp);
     if(userChoice === comp){
         msg.textContent = "Draw";
 
